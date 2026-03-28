@@ -1,0 +1,159 @@
+---
+title: "Co-payments, Demand, and the Price Elasticity of Emergency Care"
+subtitle: "A Theoretical Analysis of Ireland's 2004 A&E Attendance Charge"
+author: "Zahra Qureshi"
+date: "March 2026"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-title: "Contents"
+    theme: flatly
+    code-fold: false
+    fig-align: center
+    smooth-scroll: true
+    highlight-style: github
+bibliography: references.bib
+---
+
+## Abstract
+
+This case study examines the theoretical foundations of co-payment policy in emergency healthcare, using Ireland's 2004 A&E attendance charge as the analytical context. Drawing on standard microeconomic demand theory and the moral hazard literature, I develop a framework for predicting how a price threshold affects utilisation — and then interrogate those predictions against the available Irish empirical evidence. The findings suggest that the theoretical case for co-payments as a demand management tool is substantially weaker in emergency care than in elective or primary care settings, and that distributional effects and substitution pathways are systematically underweighted in policy design.
+
+---
+
+## 1. Introduction
+
+In January 2004, Ireland introduced a €60 charge for patients attending Accident and Emergency (A&E) departments without a prior GP referral. The stated objective was straightforward: reduce inappropriate or non-urgent A&E use by introducing a price signal at the point of demand. The policy reflected a standard application of microeconomic reasoning — if healthcare is provided free at the point of use, consumption will exceed the socially optimal level, and a co-payment can correct this distortion.
+
+This case study asks three questions. First, what does economic theory predict should happen to A&E demand following the introduction of a co-payment? Second, how well do those predictions hold up against the Irish evidence? Third, what does the gap between theory and evidence reveal about the design of co-payment policy in emergency healthcare?
+
+---
+
+## 2. Theoretical Framework
+
+### 2.1 Demand for Healthcare and Moral Hazard
+
+The standard economic model of healthcare demand treats medical care as a normal good subject to the law of demand: as price increases, quantity demanded falls, all else equal. When insurance or public provision reduces the out-of-pocket cost of care to zero — or close to zero — consumers face a marginal price below the social cost of provision. This generates **moral hazard**: the tendency to consume more healthcare than would be chosen under full-cost pricing [@manning1987].
+
+Let $p$ denote the out-of-pocket price of an A&E attendance, $q$ the quantity of attendances demanded, and $\varepsilon$ the price elasticity of demand, defined as:
+
+$$\varepsilon = \frac{\partial q}{\partial p} \cdot \frac{p}{q}$$
+
+If $\varepsilon < 0$, increasing the co-payment from $p_0 = 0$ to $p_1 = \text{€}60$ reduces demand. The magnitude of the reduction depends on $|\varepsilon|$ — how price-sensitive A&E demand is. For elective care, empirical estimates of $|\varepsilon|$ are typically in the range of 0.1–0.2 [@newhouse1993]. For emergency care, theory predicts $|\varepsilon|$ should be substantially lower, for reasons discussed in Section 3.
+
+### 2.2 The RAND Health Insurance Experiment Benchmark
+
+The foundational evidence on healthcare price sensitivity comes from the RAND Health Insurance Experiment [@manning1987], which randomly assigned individuals to insurance plans with varying cost-sharing arrangements. Key findings relevant to the Irish context:
+
+- Overall healthcare demand is price-responsive: a move from zero to positive cost-sharing reduced total spending by approximately 30%
+- The response was concentrated in **elective and discretionary** care
+- **Emergency and urgent care** showed significantly lower price sensitivity
+- Low-income individuals reduced both necessary and unnecessary care in response to co-payments, raising equity concerns
+
+These findings establish an important baseline: co-payments work in aggregate but are blunt instruments, reducing both appropriate and inappropriate utilisation simultaneously.
+
+### 2.3 The Irish Policy Context
+
+Ireland's healthcare system creates a layered co-payment structure. Prior to the 2004 charge, Category II patients (approximately 54% of the population in 2004) already faced full GP consultation costs averaging €52 per visit, making the cost of a GP-referred A&E visit approximately €52 with no additional A&E charge. The 2004 charge added a €60 penalty specifically for *self-referring* patients, creating a sharp price discontinuity at the referral threshold.
+
+The theoretical prediction is therefore nuanced. The charge does not simply raise the price of A&E attendance — it creates a **relative price incentive** to first obtain a GP referral, which eliminates the A&E charge entirely. This means the policy simultaneously:
+
+1. Raises the price of self-referring A&E attendance by €60
+2. Lowers the *relative* price of GP-referred A&E attendance to zero
+3. Raises the effective cost of a GP visit for those who attend GP solely to obtain a referral letter
+
+---
+
+## 3. Theoretical Predictions and Their Limits
+
+### 3.1 Why Emergency Demand is Less Price-Responsive
+
+Standard demand theory predicts that goods with few substitutes and immediate necessity have low price elasticity. Emergency medical care satisfies both conditions more fully than almost any other good. A patient presenting with acute chest pain, a severe allergic reaction, or a broken limb has limited ability to defer or substitute — demand is close to perfectly inelastic at the point of the emergency.
+
+This suggests the 2004 charge would have **minimal effect on genuinely urgent attendances**, which are precisely the cases the health system most wants to retain. The behavioural response, if any, would be concentrated among **non-urgent or ambulatory-sensitive conditions** — minor lacerations, mild respiratory infections, conditions that could plausibly be managed in primary care.
+
+Formally, if we partition total A&E demand $Q$ into urgent ($Q_u$) and non-urgent ($Q_{nu}$) components:
+
+$$Q = Q_u + Q_{nu}$$
+
+where $|\varepsilon_u| \approx 0$ and $|\varepsilon_{nu}| > 0$, the aggregate price elasticity $\varepsilon$ will be a weighted average biased toward zero by the inelastic urgent component. The policy-relevant effect depends entirely on the share and price sensitivity of $Q_{nu}$ — parameters that are difficult to observe directly.
+
+### 3.2 Insurance Coverage and the Incidence Problem
+
+A further complication concerns who actually bears the €60 charge. In Ireland, private health insurance (PHI) partially reimburses A&E attendance costs for many policyholders. If PHI absorbs some or all of the €60 charge, the effective out-of-pocket price for insured patients remains near zero, and the theoretical demand response disappears entirely for this group.
+
+Approximately 46% of the Irish population held PHI in 2004. For this group, the co-payment incidence was largely borne by the insurer rather than the patient. The demand management effect of the charge is therefore concentrated on the 54% without PHI — a population that is, on average, lower income and potentially more price-sensitive but also more likely to lack access to primary care alternatives.
+
+This creates a distributional tension: the policy most reduces utilisation among those with the fewest alternatives, while leaving utilisation by more affluent, insured patients largely unchanged.
+
+### 3.3 The Substitution Effect: GP Referral as a Price Avoidance Strategy
+
+The 2004 charge creates an explicit financial incentive to obtain a GP referral before attending A&E, since a referral letter reduces the A&E charge from €60 to €0. Standard demand theory predicts that rational patients facing this price structure will substitute toward GP-referred attendance — not by reducing total A&E use, but by changing the *pathway* of access.
+
+This substitution effect has two implications. First, it increases demand for GP services, placing additional pressure on primary care capacity. Second, it may increase total healthcare costs if obtaining a GP referral requires an additional visit with associated costs (€52 per visit in 2004). For a patient whose underlying condition warrants A&E attendance regardless, the rational response to the charge is to incur the GP consultation cost to avoid the A&E charge — an outcome that increases rather than decreases system-wide utilisation and cost.
+
+---
+
+## 4. Evidence Against Theory
+
+### 4.1 What the Empirical Literature Finds
+
+The most directly relevant Irish evidence comes from two ESRI studies. @nolan2008 examines the impact of free GP care eligibility on GP service utilisation, establishing the responsiveness of primary care demand to price changes in the Irish context. The more directly applicable evidence for A&E comes from @walsh2019, who examine the 2015 expansion of free GP care to children under 6 using a difference-in-differences design on 413,562 ED attendances.
+
+Walsh et al.'s key finding is instructive: **expanding free GP care did not reduce overall ED utilisation among under-6s**, but did increase the share of attendances occurring through GP referral by approximately 2 percentage points. This finding is consistent with the substitution mechanism described in Section 3.3 — patients are changing *how* they access ED care rather than whether they access it.
+
+While this study examines a different policy instrument (free GP care rather than an A&E charge), the underlying mechanism is symmetric: both policies alter the relative price of GP-referred versus self-referred A&E attendance. The behavioural response — pathway substitution without overall demand reduction — is therefore informative for the 2004 charge as well.
+
+### 4.2 The Theory-Evidence Gap
+
+The gap between theoretical prediction and observed behaviour can be explained by several factors that standard demand models do not adequately capture:
+
+**Uncertainty and risk aversion.** Patients presenting at A&E typically face significant uncertainty about the severity of their condition. Under uncertainty, the disutility of under-treating a serious condition outweighs the disutility of paying €60 for an unnecessary attendance. A risk-averse patient will attend A&E even when the expected cost exceeds the expected benefit of the visit [@arrow1963].
+
+**Information asymmetry.** Patients cannot accurately self-diagnose condition severity. The theoretical model assumes patients can distinguish urgent from non-urgent conditions and respond accordingly — an assumption that does not hold in practice. A patient with abdominal pain cannot determine in advance whether the cause is minor indigestion or appendicitis.
+
+**Behavioural inertia.** Behavioural economics suggests that habit and inertia are significant determinants of healthcare-seeking behaviour. Patients accustomed to attending A&E as a first point of contact may not immediately redirect to primary care in response to a price signal, particularly if access to GP appointments is constrained.
+
+---
+
+## 5. Policy Implications
+
+### 5.1 Co-payments as a Demand Management Tool in Emergency Care
+
+The theoretical and empirical evidence converges on a consistent conclusion: co-payments are a blunt and potentially counterproductive instrument for managing emergency care demand specifically.
+
+The mechanism by which co-payments reduce demand — price sensitivity — is weakest precisely where urgency is highest. The populations most responsive to the price signal (lower income, uninsured) are those with the fewest primary care alternatives. And the substitution pathway created by the referral exemption increases rather than reduces system pressure on GP services.
+
+This does not mean co-payments are ineffective in healthcare broadly. The RAND evidence, and the substantial literature on pharmaceutical co-payments, demonstrates significant demand responses in non-emergency contexts. The Irish evidence suggests the appropriate inference is more targeted: **co-payment policy should be calibrated to the price elasticity of the specific care type it targets**, and emergency care has structurally low elasticity for the reasons outlined in Section 3.
+
+### 5.2 Alternative Policy Instruments
+
+If the policy objective is to reduce inappropriate A&E use specifically, the economic literature suggests several instruments with stronger theoretical support:
+
+**Expanding primary care access** reduces the opportunity cost of accessing appropriate care before conditions escalate. The empirical evidence from expanded GP opening hours in England [@dolton2016] shows reductions in non-urgent A&E attendances of up to 9.9%, driven by increased primary care availability rather than price signals.
+
+**Triage and redirection** at the point of ED entry allows clinical judgement — rather than patient self-assessment — to determine appropriate care pathway. This addresses the information asymmetry problem directly.
+
+**Targeted co-payments by condition type** would require clinical assessment at the point of charge determination, which introduces administrative complexity but better aligns the price signal with the behavioural target.
+
+---
+
+## 6. Conclusion
+
+Ireland's 2004 A&E attendance charge represents a theoretically coherent but empirically challenged application of co-payment policy. Standard demand theory predicts that a positive price signal should reduce utilisation — and it does, in contexts where demand is price-elastic and substitutes are available. Emergency care satisfies neither condition reliably.
+
+The charge's primary documented effect — a shift from self-referred to GP-referred attendance — is consistent with rational price-avoidance behaviour rather than genuine demand reduction. The distributional consequences of this mechanism disproportionately affect lower-income populations without PHI coverage, while leaving utilisation patterns among insured patients largely unchanged.
+
+The gap between theory and evidence is not a failure of economics — it is an illustration of why applied policy analysis requires more than the application of standard models. Price elasticity is not a universal constant: it varies by condition severity, insurance coverage, availability of substitutes, and patient information. A rigorous co-payment policy in emergency healthcare requires estimating these parameters for the specific context before assuming the standard demand response will obtain.
+
+---
+
+## References
+
+::: {#refs}
+:::
+
+---
+
+*This case study was produced as part of a portfolio in applied economic analysis. The analysis draws on publicly available empirical literature and does not use restricted administrative data.*
